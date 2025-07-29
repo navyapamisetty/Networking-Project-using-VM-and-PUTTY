@@ -24,6 +24,7 @@ A cloned DB server handles MySQL separately, demonstrating multi-VM architecture
    systemctl enable --now httpd
    setenforce 0
    systemctl stop firewalld
+   
 4. **Project File:**
    File path: /var/www/html/main.php
    PHP form inserts user data into MySQL and uploads file to /var/udc/uploads/
