@@ -19,16 +19,16 @@ A cloned DB server handles MySQL separately, demonstrating multi-VM architecture
    yum install mysql -y
    yum install php-mysqli -y
 
-3. Start Apache and disable firewall:
+3. **Start Apache and disable firewall:**
    ```bash
    systemctl enable --now httpd
    setenforce 0
    systemctl stop firewalld
-4. Project File:
+4. **Project File:**
    File path: /var/www/html/main.php
    PHP form inserts user data into MySQL and uploads file to /var/udc/uploads/
 
-5. MySQL DB (on DB server):
+5. **MySQL DB (on DB server):**
 
     Host: 192.168.0.153
     
